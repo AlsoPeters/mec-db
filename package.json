@@ -1,0 +1,20 @@
+{
+  "name": "mec-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node connect.js",
+    "seed": "node createDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "chalk": "^5.4.1",
+    "express": "^4.21.2"
+  }
+}
