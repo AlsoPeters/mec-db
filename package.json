@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "rebuild": "node rebuild.cjs",
     "start": "node connect.js",
     "seed": "node createDB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
