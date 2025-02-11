@@ -10,6 +10,11 @@
     "seed": "node createDB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
