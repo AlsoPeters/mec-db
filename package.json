@@ -2,17 +2,18 @@
   "name": "mec-db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/src/index.ts",
   "type": "module",
   "scripts": {
     "rebuild": "node rebuild.cjs",
-    "start": "node connect.js",
-    "seed": "node createDB.js",
+    "dev": "tsx watch ./src/connect.ts",
+    "seed": "node ./src/createDB.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "better-sqlite3"
+      "better-sqlite3",
+      "esbuild"
     ]
   },
   "keywords": [],
@@ -20,7 +21,15 @@
   "license": "ISC",
   "dependencies": {
     "better-sqlite3": "^11.8.1",
-    "chalk": "^5.4.1",
-    "express": "^4.21.2"
+    "chalk": "4.0.0",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
